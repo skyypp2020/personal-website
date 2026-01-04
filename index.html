@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,6 +142,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -434,6 +436,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- 導航列 -->
     <nav id="navbar">
@@ -452,8 +455,8 @@
     <!-- 英雄區塊 -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>您好，我是 [您的名字]</h1>
-            <p>一位充滿熱忱的開發者 / 設計師 / 創作者</p>
+            <h1>您好，我是 林智堅(AlvinLin)</h1>
+            <p>一位充滿熱忱的 數位轉型實踐者 / 系統開發者 / 數據分析師</p>
             <a href="#portfolio" class="cta-button">查看我的作品</a>
         </div>
     </section>
@@ -674,12 +677,12 @@
 
         // 作品集項目點擊效果
         document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 // 這裡可以添加點擊後的行為，例如打開專案詳情頁面
                 console.log('點擊了作品項目:', this.querySelector('h3').textContent);
             });
         });
     </script>
 </body>
-</html>
 
+</html>

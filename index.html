@@ -216,14 +216,17 @@
             max-width: 300px;
             height: 300px;
             border-radius: 20px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
             box-shadow: var(--shadow-lg);
             margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         .about-text {
@@ -465,20 +468,21 @@
         <h2 class="section-title fade-in">關於我</h2>
         <div class="about-content fade-in">
             <div class="about-image">
-                👤
+                <img src="images/profile.jpg" alt="林智堅(AlvinLin) 個人照片">
             </div>
             <div class="about-text">
                 <h3>歡迎來到我的個人網站</h3>
                 <p>
-                    我是一位對技術充滿熱忱的開發者，專注於創造優雅且實用的解決方案。
-                    擁有豐富的專案經驗，從前端設計到後端開發，我享受將想法轉化為現實的過程。
+                    我是一位對技術充滿熱忱的資訊應用分析工程師，專注於創造穩定且具前瞻性的數位轉型方案。
+                    擁有 6 年豐富的 IT 實戰經驗，從網路安全架構（Fortinet）的底層維運
+                    到全端系統（Python/Flask/Low-code）的開發，我享受將複雜的業務需求轉化為高效自動化系統的過程。
                 </p>
                 <p>
-                    在我的職業生涯中，我持續學習新技術，並將它們應用到實際專案中。
-                    我相信好的設計不僅要美觀，更要注重使用者體驗和功能性。
-                </p>
-                <p>
-                    除了技術能力外，我也重視團隊合作和溝通，相信這些軟技能與技術能力同樣重要。
+                    在我的職業生涯中，我始終秉持「沒有奇蹟，只有累積」的信念，持續學習新技術。
+                    目前我正於中興大學資工所在職專班專研 AI 領域，
+                    致力於將機器學習與預測分析導入 Tableau BI 報表與自動化監控中，
+                    實現從「被動維護」到「數據驅動決策」的轉型。
+                    我相信好的資訊架構不僅要安全穩定，更要能與業務邏輯無縫連結，切實解決使用者痛點。
                 </p>
             </div>
         </div>
@@ -490,33 +494,28 @@
         <div class="skills-grid">
             <div class="skill-card fade-in">
                 <div class="skill-icon">💻</div>
-                <h4>前端開發</h4>
-                <p>HTML, CSS, JavaScript, React, Vue.js</p>
+                <h4>全端開發</h4>
+                <p>Python, Flask, Low-code, API 設計, 資料庫整合</p>
+            </div>
+            <div class="skill-card fade-in">
+                <div class="skill-icon">🤖</div>
+                <h4>AI工具應用</h4>
+                <p>NotebookLM、Cursor、ChatGPT、Nano Banana等工具應用</p>
             </div>
             <div class="skill-card fade-in">
                 <div class="skill-icon">⚙️</div>
-                <h4>後端開發</h4>
-                <p>Python, Node.js, API 設計, 資料庫</p>
+                <h4>IT設施維運</h4>
+                <p>Fortinet 網路安全, 系統架構, 監控維運, 自動化部署</p>
             </div>
             <div class="skill-card fade-in">
-                <div class="skill-icon">🎨</div>
-                <h4>UI/UX 設計</h4>
-                <p>Figma, Adobe XD, 使用者體驗設計</p>
+                <div class="skill-icon">📊</div>
+                <h4>視覺化設計</h4>
+                <p>Tableau BI, 資料視覺化, 報表設計, 互動式儀表板</p>
             </div>
             <div class="skill-card fade-in">
-                <div class="skill-icon">📱</div>
-                <h4>行動開發</h4>
-                <p>React Native, Flutter, 響應式設計</p>
-            </div>
-            <div class="skill-card fade-in">
-                <div class="skill-icon">🔧</div>
-                <h4>工具與框架</h4>
-                <p>Git, Docker, CI/CD, 雲端服務</p>
-            </div>
-            <div class="skill-card fade-in">
-                <div class="skill-icon">🚀</div>
-                <h4>專案管理</h4>
-                <p>Agile, Scrum, 團隊協作</p>
+                <div class="skill-icon">🔍</div>
+                <h4>資料分析</h4>
+                <p>數據驅動決策, 業務邏輯分析, 效能監控, 趨勢預測</p>
             </div>
         </div>
     </section>

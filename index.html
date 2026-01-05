@@ -407,6 +407,15 @@
             justify-content: center;
             color: white;
             font-size: 3rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         .portfolio-content {
@@ -696,74 +705,86 @@
         <h2 class="section-title fade-in">作品集</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item fade-in">
-                <div class="portfolio-image">🌐</div>
-                <div class="portfolio-content">
-                    <h3>專案名稱 1</h3>
-                    <p>這是一個精彩的專案描述，展示了我的技術能力和創意思維。專案解決了實際問題並提供了優雅的使用者體驗。</p>
-                    <div class="portfolio-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
-                    </div>
+                <div class="portfolio-image">
+                    <img src="images/network-topology.png" alt="網路實體拓譜圖">
                 </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-image">📱</div>
                 <div class="portfolio-content">
-                    <h3>專案名稱 2</h3>
-                    <p>這是一個行動應用程式專案，專注於提供流暢的使用者體驗和現代化的設計。整合了多項先進技術。</p>
+                    <h3>網路實體拓譜圖繪製</h3>
+                    <p>從『掃描』進化到『同步』：利用 FortiGate API 深度整合 D3.js，打造低延遲、高精度的動態拓譜監控系統。擺脫傳統掃描工具的盲區，實現真正的即時網路可視化。</p>
                     <div class="portfolio-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">UI/UX</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-image">🎨</div>
-                <div class="portfolio-content">
-                    <h3>專案名稱 3</h3>
-                    <p>這是一個設計與開發結合的專案，展現了我在視覺設計和技術實現方面的綜合能力。</p>
-                    <div class="portfolio-tags">
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">設計</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-image">⚡</div>
-                <div class="portfolio-content">
-                    <h3>專案名稱 4</h3>
-                    <p>這是一個高效能的後端系統，處理大量資料並提供穩定的服務。展現了我在系統架構方面的專業能力。</p>
-                    <div class="portfolio-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Django</span>
-                        <span class="tag">PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-image">🔐</div>
-                <div class="portfolio-content">
-                    <h3>專案名稱 5</h3>
-                    <p>這是一個注重安全性和隱私的專案，實現了完整的認證系統和資料保護機制。</p>
-                    <div class="portfolio-tags">
-                        <span class="tag">Security</span>
-                        <span class="tag">JWT</span>
-                        <span class="tag">加密</span>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item fade-in">
-                <div class="portfolio-image">📊</div>
-                <div class="portfolio-content">
-                    <h3>專案名稱 6</h3>
-                    <p>這是一個資料視覺化專案，將複雜的資料轉化為易於理解的圖表和互動式介面。</p>
-                    <div class="portfolio-tags">
-                        <span class="tag">Data Viz</span>
+                        <span class="tag">Flask</span>
                         <span class="tag">D3.js</span>
-                        <span class="tag">Analytics</span>
+                        <span class="tag">Fortinet</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in">
+                <div class="portfolio-image">
+                    <img src="images/production-schedule.png" alt="生管排程視覺化">
+                </div>
+                <div class="portfolio-content">
+                    <h3>生管排程視覺化</h3>
+                    <p>數位化生管排程戰情室：運用 Tableau 串接 MSSQL 即時資料，打造跨組別排單可視化平台，實現產能精準調度與生產透明化管理。</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">MSSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in">
+                <div class="portfolio-image">
+                    <img src="images/health-management-system.png" alt="智慧飲食健康管理系統">
+                </div>
+                <div class="portfolio-content">
+                    <h3>智慧飲食健康管理系統</h3>
+                    <p>我們利用 Flutter 建構前端感知層，結合 n8n 自動化引擎驅動後端邏輯。核心亮點在於使用多模態 AI 模型同時處理視覺（照片）與語義（文字）資訊，精準解構用餐情境。</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">n8n</span>
+                        <span class="tag">多模態AI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in">
+                <div class="portfolio-image">
+                    <img src="images/boyfriend-translator.png" alt="男友求生翻譯機">
+                </div>
+                <div class="portfolio-content">
+                    <h3>男友求生翻譯機</h3>
+                    <p>本專案利用 GenAI (生成式 AI) 技術解決伴侶間的「非對稱溝通」。系統透過加強關鍵領域（感性語義、潛台詞解析）的權重，將模糊的自然語言轉化為精準的意圖識別；同時，藉由固定化 AI 的回應模式，確保輸出結果具備高度一致性的「生存策略」回覆風格，以技術手段優化情感管理效率。</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">GenAI</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in">
+                <div class="portfolio-image">
+                    <img src="images/discontinuation-analysis.png" alt="計畫停產料號-成本分析系統">
+                </div>
+                <div class="portfolio-content">
+                    <h3>計畫停產料號-成本分析系統</h3>
+                    <p>一個專為解決停產決策挑戰而生的系統。它將取代耗時的人工比對，自動化 BOM 獨用性分析，並提供量化的數據模型，協助我們做出最有利的商業判斷。</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">MSSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in">
+                <div class="portfolio-image">
+                    <img src="images/wine-analysis.png" alt="葡萄酒資料集分析">
+                </div>
+                <div class="portfolio-content">
+                    <h3>葡萄酒資料集分析</h3>
+                    <p>本專案基於 WineQT 資料集進行多元線性迴歸分析，採用 CRISP-DM (Cross-Industry Standard Process for Data Mining) 方法論來建立預測模型，目標是預測葡萄酒品質。</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">Streamlit</span>
+                        <span class="tag">scikit-learn</span>
+                        <span class="tag">seaborn</span>
                     </div>
                 </div>
             </div>

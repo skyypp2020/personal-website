@@ -282,6 +282,96 @@
             font-size: 0.9rem;
         }
 
+        /* 時間軸 */
+        .timeline {
+            background: var(--bg-color);
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 3rem auto 0;
+            padding: 2rem 0;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            width: 45%;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: auto;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 0 0 8px var(--bg-color), var(--shadow);
+            z-index: 10;
+        }
+
+        .timeline-content h3 {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .timeline-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         /* 作品集 */
         .portfolio {
             background: var(--bg-color);
@@ -424,6 +514,24 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .timeline-container::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+                padding-left: 70px;
+            }
+
+            .timeline-content {
+                width: 100%;
+                margin: 0 !important;
+            }
+
+            .timeline-icon {
+                left: 30px;
+            }
         }
 
         /* 滾動動畫 */
@@ -505,7 +613,7 @@
             <div class="skill-card fade-in">
                 <div class="skill-icon">⚙️</div>
                 <h4>IT設施維運</h4>
-                <p>Fortinet 網路安全, 系統架構, 監控維運, 自動化部署</p>
+                <p>Fortinet 網路安全, 系統架構, 監控維運, Vmware ESXI 管理</p>
             </div>
             <div class="skill-card fade-in">
                 <div class="skill-icon">📊</div>
@@ -516,6 +624,55 @@
                 <div class="skill-icon">🔍</div>
                 <h4>資料分析</h4>
                 <p>數據驅動決策, 業務邏輯分析, 效能監控, 趨勢預測</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 時間軸 - 啊哈時刻 -->
+    <section id="timeline" class="timeline">
+        <h2 class="section-title fade-in">啊哈時刻</h2>
+        <div class="timeline-container fade-in">
+            <div class="timeline-item">
+                <div class="timeline-icon">📦</div>
+                <div class="timeline-content">
+                    <h3>物料進出條碼系統</h3>
+                    <p>建立完整的物料管理系統，透過條碼技術實現進出貨自動化追蹤，大幅提升庫存管理效率與準確性。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">📅</div>
+                <div class="timeline-content">
+                    <h3>生管排程行事曆視覺化</h3>
+                    <p>將複雜的生管排程數據轉化為直觀的視覺化行事曆，讓生產管理更清晰易懂，提升決策效率。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🔌</div>
+                <div class="timeline-content">
+                    <h3>機房線路整頓</h3>
+                    <p>系統化整理機房線路架構，改善線路標識與管理，提升維護效率並降低故障風險。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">⚡</div>
+                <div class="timeline-content">
+                    <h3>網路架構升級到10G光纖</h3>
+                    <p>完成企業網路基礎設施升級，將網路架構提升至10G光纖，大幅提升傳輸速度與穩定性。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🛡️</div>
+                <div class="timeline-content">
+                    <h3>Fortinet鐵三角導入</h3>
+                    <p>導入Fortinet完整安全解決方案，建立防火牆、交換器、無線AP的整合架構，強化企業網路安全防護。</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">🔒</div>
+                <div class="timeline-content">
+                    <h3>ThreatSonar MDR 端點防護導入</h3>
+                    <p>部署ThreatSonar MDR端點偵測與回應系統，實現主動式威脅監控與自動化防護，提升資安防禦能力。</p>
+                </div>
             </div>
         </div>
     </section>
